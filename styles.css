@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    padding: 2px;
+}
+
+p{
+    padding: 0 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#container{
+    
+    background-color: gainsboro;
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+    gap: 5px;
+    position:relative;
+  
+
+}
+
+#sidebar{
+    background-color: deepskyblue;
+    color: white;
+
+    grid-area: 1 / 1 / 7 / 2;
+}
+
+#header {
+    border: lightgray .5px solid;
+    background-color: white;
+    grid-area: 1 / 2 / 2 / 7; 
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#header div {
+    border: lightgray 1px solid;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    align-items: center;
+}
+
+#header-bottom ul{
+    display:flex;
+    
+    justify-content: space-between;
+}
+
+#main {
+    display: grid;
+    
+    grid-template-columns: 4fr 1fr;
+   
+}
+
+#projects {
+    background-color:gainsboro;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr repeat(3, 10fr) 1fr;
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+#projects-header {
+    grid-column: 1 /3;
+}
+
+.card {
+    background-color: white;
+    border-left: orange solid 6px;
+    padding: 20px;
+    border-radius: 6px;
+}
