@@ -46,8 +46,10 @@ button{
 
 
 .icon{
-    width: 25px;
-    
+    width: 25px;  
+}
+.icon-small{
+    width:20px;
 }
 
 .user-pic{
@@ -256,7 +258,7 @@ font-weight: bold;
    
 margin-top: 10px;
 display:grid;
-row-gap: 20px;
+row-gap: 15px;
 }
 
 .trending-user{
