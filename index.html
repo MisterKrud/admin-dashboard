@@ -30,34 +30,46 @@
         </div>
         <div id="header">
             <div id="header-top">
-            <div class="header-left">
-            <button id="search-submit"><img src="/images/magnify.svg" alt="search icon" class="icon"></button>
-                <input type="text" id="searchbar" name="searchbar">
-            </div>
-            <div class="header-right">
-                <img src="/images/bell-ring-outline.svg" alt="alerts" class="icon">
-                <img src="/images/User 3.png" alt="alerts" class="user-pic">
-                <h3 id="user-name">Mister Krudler</h3>
-            </div>
+                <div class="header-left">
+                    <button id="search-submit"><img src="/images/magnify.svg" alt="search icon" class="icon"></button>
+                    <input type="text" id="searchbar" name="searchbar">
+                </div>
+                <div class="header-right">
+                    <img src="/images/bell-ring-outline.svg" alt="alerts" class="icon">
+                    <img src="/images/User 3.png" alt="alerts" class="user-pic">
+                    <h3 id="user-name">Mister Krudler</h3>
+                </div>
 
             </div>
             <div id="header-bottom">
-                <p>Title & icon placeholder</p>
-                <ul>
-                    <li><button>New</button></li>
-                    <li><button>Upload</button></li>
-                    <li><button>Share</button></li>
-                </ul>
+                <div class="header-left">
+                    <img src="/images/User 3.png" alt="alerts" class="user-pic-main">
+                    <div id="greeting">
+                        <p>Hi there,</p>
+                        <h2 class="user-name">Mister Krudler (@krudler)</h2>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <ul>
+                        <li><button>New</button></li>
+                        <li><button>Upload</button></li>
+                        <li><button>Share</button></li>
+                    </ul>
+                </div>
             </div>
 
 
 
         </div>
         <div id="main">
-            <div id="projects-header"><h3>Your Projects</h3></div>
-            <div id="main-sidebar-header"><h3>Announcements</h3></div>
+            <div id="projects-header">
+                <h3>Your Projects</h3>
+            </div>
+            <div id="main-sidebar-header">
+                <h3>Announcements</h3>
+            </div>
             <div id="projects">
-               
+
                 <div id="card1" class="card">
                     <h4>Super Cool Project</h4>
                     <p>Sed fermentum vehicula tellus. Nulla tellus metus, consectetur quis ante eu, laoreet porta urna.
@@ -90,16 +102,19 @@
             </div>
             <div id="main-sidebar">
                 <div id="announcements">
-                    
-                    <div class="card main-sidebar-card"  id="announcements-card">
+
+                    <div class="card main-sidebar-card" id="announcements-card">
                         <h5>Site maintenance</h5>
-                        <p>Vivamus convallis turpis ut ipsum luctus lobortis. Sed efficitur imperdiet ligula, nec volutpat tellus vestibulum in</p>
+                        <p>Vivamus convallis turpis ut ipsum luctus lobortis. Sed efficitur imperdiet ligula, nec
+                            volutpat tellus vestibulum in</p>
                         <hr>
                         <h5>Community Share Day</h5>
-                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sem dolor, auctor vel nibh in, cursus bibendum nibh.</p>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis
+                            sem dolor, auctor vel nibh in, cursus bibendum nibh.</p>
                         <hr>
                         <h5>Uploaded Privacy Policy</h5>
-                        <p>Maecenas efficitur ligula at consectetur porta. Suspendisse fermentum neque vitae euismod cursus. Ut egestas tortor quis ex auctor scelerisque.</p>
+                        <p>Maecenas efficitur ligula at consectetur porta. Suspendisse fermentum neque vitae euismod
+                            cursus. Ut egestas tortor quis ex auctor scelerisque.</p>
 
                     </div>
 
@@ -107,20 +122,33 @@
                 </div>
                 <div id="trending">
                     <h3>Trending</h3>
-                    <div class="card main-sidebar-card"  id="trending-card">
-                        
-                        <p>@tegan</p>
-                        <p>World Peace Builder</p>
-                       
-                        <p>@morgan</p>
-                        <p>Super Cool Project</p>
-                      
-                        <p>@Kendall</p>
-                        <p>Life Changing App</p>
-                       
-                        <p>@alex</p>
-                        <p>No Traffic MAker</p>
-
+                    <div class="card main-sidebar-card" id="trending-card">
+                        <div class="trending-user" id="user1">
+                            <div>
+                                
+                            <img src="/images/User 2.png" class="user-pic">
+                        </div><div>
+                            <p>@tegan</p>
+                            <p>World Peace Builder</p>
+                        </div></div>
+                    
+                    <div class="trending-user" id="user2"><div>
+                        <img src="/images/User 3.png" class="user-pic">
+                    </div><div>
+                            <p>@morgan</p>
+                            <p>Super Cool Project</p>
+                        </div></div>
+                        <div class="trending-user" id="user3"><div>
+                            <img src="/images/User 4.png" class="user-pic"></div>
+                            <div>
+                            <p>@Kendall</p>
+                            <p>Life Changing App</p>
+                        </div></div>
+                        <div class="trending-user" id="user4"><div>
+                            <img src="/images/User 1.png" class="user-pic"></div><div>
+                            <p>@alex</p>
+                            <p>No Traffic Maker</p>
+                        </div></div>
                     </div>
                 </div>
 

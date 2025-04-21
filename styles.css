@@ -12,6 +12,8 @@ div {
     padding: 2px;
 }
 
+
+
 p h1 h2 h3 h4 h5{
     padding: 0 5px;
    
@@ -51,6 +53,11 @@ button{
 .user-pic{
     width: 45px;
     margin: 0 20px;
+}
+
+.user-pic-main{
+    width: 80px;
+    margin-left: 15px;
 }
 
 #container{
@@ -93,11 +100,20 @@ padding: 20px 20px 50px 10px;
 }
 
 #header {
-    border: lightgray .5px solid;
+    
     background-color: white;
     grid-area: 1 / 2 / 2 / 7; 
     display: grid;
     grid-template-rows: 2fr 3fr;
+}
+
+#header-top{
+    margin-top:auto;
+}
+
+
+.header-left{
+    margin-left: 50px;
 }
 
 #header>div>.header-left{
@@ -129,11 +145,11 @@ font-weight: bold;
     background-color: #edeef0;
     border-radius: 50px;
     height: 1.8rem;
-    width: 80%;
+    width: 95%;
 }
 
 #header div {
-    border: lightgray 1px solid;
+    padding: 7px 0;
     display: grid;
     grid-template-columns: 4fr 2fr;
     align-items: center;
@@ -145,10 +161,16 @@ font-weight: bold;
     justify-content: space-between;
 }
 
+#greeting{
+    display: block !important;
+    margin-left: 20px
+}
+
 #main {
     display: grid;
     
     grid-template-columns: 4fr 1fr;
+    grid-template-rows: 2rem 1fr;
    
 }
 
@@ -188,7 +210,7 @@ font-weight: bold;
 }
 
 .card p{
-    font-size: 12px;
+    font-size: 14px;
     color:rgb(78, 78, 78);
     
 }
@@ -196,7 +218,7 @@ font-weight: bold;
 #main-sidebar{
     display: grid;
    padding: 10px 0 20px;
-   grid-template-rows: auto;
+   grid-template-rows: 1fr 1fr;
    gap: 20px;
 }
 
@@ -206,17 +228,40 @@ font-weight: bold;
 
 .main-sidebar-card{
     border: none !important;
+  
 }
 
 
 
 .main-sidebar-card p{
-    font-size: 10px;
+    font-size: 12px;
     
-    line-height: 1.05rem;
+    line-height: 1.08rem;
 
+}
+
+#announcements-card:only-of-type(h5){
+    font-weight: bold;
+}
+
+#trending-card p{
+    /* display: block; */
+}
+
+#trending-card p:nth-child(odd){
+    font-weight: bold;
 }
 
 #trending-card{
+   
 margin-top: 10px;
+display:grid;
+row-gap: 20px;
 }
+
+.trending-user{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+
