@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body{
     font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -51,10 +52,16 @@ button{
 .menu-icon {
    color: white;
   
-   width: 25px; 
-   margin-left: 5px;
-   
+   width: 25px;  
 }
+
+.dash-header-icon {
+    color: white;
+   
+    width: 70px;  
+    margin-left: -5px
+ }
+ 
 
 .icon-small{
     width:20px;
@@ -86,6 +93,8 @@ button{
 #sidebar{
     background-color:#1293d5;
     color: white;
+    padding: 0  15px;
+   
 
     grid-area: 1 / 1 / 7 / 2;
     display: grid;
@@ -100,9 +109,7 @@ button{
     padding-top: 0;
     
 }
-#sidebar h3{
-    grid-area: 1 /1 / 2 /3;
-}
+
 #sidebar div {
     /* border: white .8px solid; */
     padding: 10px;
@@ -188,6 +195,7 @@ font-weight: bold;
 
 #main {
     display: grid;
+    padding-top: 15px;
     
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 2rem 1fr;
@@ -210,10 +218,9 @@ font-weight: bold;
 }
 
 .card-icons{
-   position: relative;
-   bottom: 0px;
-   right: 0px;
+   
    border: grey solid 1px;
+  justify-self: end;
 
 }
 #main-sidebar-header{
@@ -245,7 +252,7 @@ font-weight: bold;
 
 #main-sidebar{
     display: grid;
-   padding: 10px 0 20px;
+   padding-bottom: 50px;
    grid-template-rows: 1fr 1fr;
    gap: 20px;
   
@@ -281,14 +288,27 @@ font-weight: bold;
 
 #trending-card{
    
-margin: 10px  10px 0 0;
+margin: 10px  0 0 0;
 display:grid;
 row-gap: 15px;
 }
 
+.trending-user>div>.user-pic{
+    margin-right: 5px;
+    margin-left: -5px;
+    
+}
+.trending-user div p{
+    margin-right: -10px;
+    font-size: 14px;
+    
+}
+
+
 .trending-user{
     display: grid;
     grid-template-columns: 1fr 2fr;
+    align-self: center;
     
 }
 
