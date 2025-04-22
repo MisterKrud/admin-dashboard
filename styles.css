@@ -48,6 +48,12 @@ button{
 .icon{
     width: 25px;  
 }
+.menu-icon {
+   color: white;
+   border: white 1px solid;
+   width: 25px; 
+}
+
 .icon-small{
     width:20px;
 }
@@ -81,9 +87,14 @@ button{
 
     grid-area: 1 / 1 / 7 / 2;
     display: grid;
-    /* grid-template-columns: 1fr 8fr; */
+   
     /* grid-template-rows: 2fr repeat(5, 1fr) 2fr repeat(3, 1fr); */
+    
     grid-template-rows: repeat(10, auto) 1fr;
+}
+
+#sidebar h3{
+    grid-area: 1 /1 / 2 /2;
 }
 #sidebar div {
     /* border: white .8px solid; */
@@ -180,7 +191,7 @@ font-weight: bold;
     background-color:#edeef0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+    height: 100%;
     gap: 20px;
     padding: 10px 20px 20px;
     
@@ -188,6 +199,14 @@ font-weight: bold;
 
 #projects-header {
     grid-column: 1 /2;
+
+}
+
+.card-icons{
+   position: relative;
+   bottom: 0px;
+   right: 0px;
+   border: grey solid 1px;
 
 }
 #main-sidebar-header{
@@ -202,10 +221,10 @@ font-weight: bold;
     border-left: orange solid 6px;
     padding: 20px;
     border-radius: 6px;
-    line-height: 1.05rem;
-    
-    
+    line-height: 1.05rem;   
 }
+
+
 
 .card h4, h5{
     margin-bottom: 5px;
@@ -222,6 +241,7 @@ font-weight: bold;
    padding: 10px 0 20px;
    grid-template-rows: 1fr 1fr;
    gap: 20px;
+  
 }
 
 
@@ -246,9 +266,7 @@ font-weight: bold;
     font-weight: bold;
 }
 
-#trending-card p{
-    /* display: block; */
-}
+
 
 #trending-card p:nth-child(odd){
     font-weight: bold;
@@ -256,7 +274,7 @@ font-weight: bold;
 
 #trending-card{
    
-margin-top: 10px;
+margin: 10px  10px 0 0;
 display:grid;
 row-gap: 15px;
 }
