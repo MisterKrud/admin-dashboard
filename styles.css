@@ -33,7 +33,7 @@ hr {
     border-top: .5px solid rgb(180, 178, 178);
     margin: 8px 0;
 }
-button{
+.header-button{
     border: none;
     background-color:#1293d5;
     width: 80px;
@@ -44,7 +44,7 @@ button{
     font-weight: bold;
 }
 
-button:focus{
+.header-button:focus{
     box-shadow: 2px 2px 5px #6495ad;
 }
 
@@ -170,7 +170,12 @@ font-weight: bold;
 #search-submit {
     background-color: white;
     width: 30px;
+    margin: 0 10px;
+    padding: 8px 0;
+    border: none;
 }
+
+
 #searchbar{
     border: none;
     background-color: #edeef0;
@@ -215,7 +220,7 @@ font-weight: bold;
     background-color:#edeef0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 100%;
+   
     gap: 20px;
     padding: 10px 20px 20px;
     
@@ -307,14 +312,16 @@ font-weight: bold;
    
 margin: 10px  0 0 0;
 
-row-gap: 15px;
+
 }
 
-.trending-user>div>.user-pic{
+.trending-user>div>img{
     margin-right: 5px;
     margin-left: -5px;
     
+    
 }
+
 .trending-user div p{
     margin-right: -10px;
     font-size: 14px;
