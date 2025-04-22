@@ -50,8 +50,10 @@ button{
 }
 .menu-icon {
    color: white;
-   border: white 1px solid;
+  
    width: 25px; 
+   margin-left: 5px;
+   
 }
 
 .icon-small{
@@ -87,14 +89,19 @@ button{
 
     grid-area: 1 / 1 / 7 / 2;
     display: grid;
-   
+   grid-template-columns: 1fr 4fr;
     /* grid-template-rows: 2fr repeat(5, 1fr) 2fr repeat(3, 1fr); */
     
     grid-template-rows: repeat(10, auto) 1fr;
 }
-
+.dash-text-container, .dash-icon-container { 
+  
+    margin-bottom: auto;
+    padding-top: 0;
+    
+}
 #sidebar h3{
-    grid-area: 1 /1 / 2 /2;
+    grid-area: 1 /1 / 2 /3;
 }
 #sidebar div {
     /* border: white .8px solid; */
