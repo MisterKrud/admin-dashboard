@@ -44,6 +44,10 @@ button{
     font-weight: bold;
 }
 
+button:focus{
+    box-shadow: 2px 2px 5px #6495ad;
+}
+
 
 
 .icon{
@@ -173,6 +177,11 @@ font-weight: bold;
     border-radius: 50px;
     height: 1.8rem;
     width: 95%;
+}
+
+#searchbar:focus{
+    box-shadow: 5px 5px 5px gray;
+    
 }
 
 #header div {
