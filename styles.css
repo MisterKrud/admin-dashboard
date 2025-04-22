@@ -226,12 +226,19 @@ font-weight: bold;
 
 }
 
+
 .card-icons{
    
-   border: grey solid 1px;
+ 
   justify-self: end;
+  margin-top:auto;
 
 }
+
+.card-icons img{
+    margin: 0 12px;
+}
+
 #main-sidebar-header{
     grid-column: 2/3;
 }
@@ -244,7 +251,8 @@ font-weight: bold;
     border-left: orange solid 6px;
     padding: 20px;
     border-radius: 6px;
-    line-height: 1.05rem;   
+    line-height: 1.05rem;  
+    display: grid; 
 }
 
 
@@ -298,7 +306,7 @@ font-weight: bold;
 #trending-card{
    
 margin: 10px  0 0 0;
-display:grid;
+
 row-gap: 15px;
 }
 
